@@ -10,7 +10,6 @@ public class Agente1 extends Agent {
     protected void setup() {                //crea el primer hilo en la creacion del agente
         addBehaviour(new Comportamiento());
     }
-
     @Override
     protected void takeDown(){
         Contenedor c = (Contenedor)getArguments()[0];
@@ -31,7 +30,6 @@ public class Agente1 extends Agent {
             doDelete(); //matar el agente
             //antes hacer algo entonces usar un comportamiento del agente
         }
-
         @Override
         public boolean done() {
             //control de acciones al agente
